@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section>
+        <div id="heading" class="box">
+            <h1><%= day %></h1>
+        </div>
+        <div class="box">
+            <% if (locals.items){ %>
+                <% items.forEach((newItem)=>{ %>
+                    <div class="item">
+                        <input type="checkbox">
+                        <p><%= newItem %></p>
+                    </div>
+                <% }) %>
+            <% } %>
+            <form action="/submit" method="post" class="item">
+                <input type="text" name="newItem" placeholder="New Item">
+                <button type="submit">+</button>
+            </form>
+        </div>
+        
+    </section>
+    
+</body>
+</html>
