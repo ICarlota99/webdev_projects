@@ -1,11 +1,32 @@
-<h1>Welcome to <strong>Check It Off</strong></h1>
-<h3>A handy checklist app to keep track of your tasks and projects in one place.<br>Create lists, set reminders, and get things done.</h3>
+<%- include("partials/header.ejs") %>
+    <div class="container-fluid">
+        <h1 class="text-center">Welcome to <strong>Check It Off</strong></h1><br>
+        <h4 >A handy checklist app to keep track of your tasks and projects in one place.<br>Create lists, set reminders, and get things done.</h4>
+    </div>
+    <div class="welcome_options container-fluid text-center box">
+        <ul>
+            <li>
+                <i class="fas fa-clipboard-list fa-3x"></i>
+                <h5>Create Tasks Quickly and Easily</h5>
+                <p>Input simple tasks, subtasks and repetitive tasks.</p>
+            </li>
+            <li>
+                <i class="fas fa-clock fa-3x"></i>
+                <h5>Task Reminders</h5>
+                <p>Set reminders and never miss important things.</p>
+            </li>
+            <li>
+                <i class="far fa-calendar-alt fa-3x"></i>
+                <h5>Calendar Section</h5>
+                <p>Review your daily task in the calendar section.</p>
+            </li>
+            <li>
+                <i class="fas fa-palette fa-3x"></i>
+                <h5>Custom Themes</h5>
+                <p>Choose the theme you like and start your wonderful day.</p>
+            </li>
+        </ul>
+        <button>CONTINUE   <i class="	fas fa-angle-double-right"></i></button>
+    </div>
 
-<ul>
-    <li>Create Tasks Quickly and Easily</li>
-    <li>Task Reminders</li>
-    <li>Calendar Section</li>
-    <li>Custom Themes</li>
-</ul>
-
-<button>CONTINUE</button>
+<%- include("partials/footer.ejs") %>

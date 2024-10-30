@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #4fb7c0;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+}
+
+main{
+    margin: auto;
+    width: 60%;
+}
+
+.box{
+    background: #EBF4F6;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+li{
+    list-style: none;
+    padding: 3% 0;
+    text-align: left;
+    border-bottom: 1px solid rgb(63, 62, 62);
+}
+
+li i{
+    float: left;
+    padding-right: 1%;
+}
+
+li h4{
+    display: inline-block;
+}
+li p{
+    color: rgb(63, 62, 62);
+}
+
+button{
+    background-color: #071952;
+    border-radius: 20%;
+    color: white;
+    padding: 2% 5%;  
+}
+button i{
+    color: white;
+}
