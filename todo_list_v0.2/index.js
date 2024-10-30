@@ -8,6 +8,14 @@ import cookieParser from "cookie-parser";
 const app = express();
 const port = 3000;
 
+// Globals
+let lists = {
+  personal: [],
+  shopping: [],
+  wish: [],
+  work: [],
+}
+
 // Setup npm modules
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
