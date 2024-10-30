@@ -1,5 +1,5 @@
 <%- include("partials/header.ejs") %>
-    <div class="container-fluid">
+    <div class="welcome_msg container-fluid">
         <h1 class="text-center">Welcome to <strong>Check It Off</strong></h1><br>
         <h4 >A handy checklist app to keep track of your tasks and projects in one place.<br>Create lists, set reminders, and get things done.</h4>
     </div>
@@ -26,7 +26,10 @@
                 <p>Choose the theme you like and start your wonderful day.</p>
             </li>
         </ul>
-        <button>CONTINUE   <i class="	fas fa-angle-double-right"></i></button>
+        <form action="/submit" method="post">
+            <button type="submit">CONTINUE <i class="fas fa-angle-double-right"></i></button>
+        </form>
+        
     </div>
 
 <%- include("partials/footer.ejs") %>

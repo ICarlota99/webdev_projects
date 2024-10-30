@@ -33,3 +33,7 @@ app.get('/', (req, res) => {
         res.render('index.ejs');
       }
     });
+
+app.post('/submit', (req,res)=>{
+    res.render('index.ejs');
+});

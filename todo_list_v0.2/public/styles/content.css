@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    background-color: #4fb7c0;
+    background-color: #071952;
     font-family: "Poppins", sans-serif;
     line-height: 1.5;
 }
@@ -12,7 +12,9 @@ main{
     margin: auto;
     width: 60%;
 }
-
+.welcome_msg{
+    color: white;
+}
 .box{
     background: #EBF4F6;
     border-radius: 2rem;
