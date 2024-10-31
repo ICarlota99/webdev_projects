@@ -12,7 +12,7 @@ const port = 3000;
 let lists = {
   personal: [],
   shopping: [],
-  wish: [],
+  wishlist: [],
   work: [],
 }
 
@@ -42,6 +42,26 @@ app.get('/', (req, res) => {
       }
     });
 
-app.post('/submit', (req,res)=>{
+app.post('/index', (req,res)=>{
     res.render('index.ejs');
 });
+
+app.post('/addList', (req,res)=>{
+  let category = req.body.categories;
+  // Check for valid category
+  if (lists.hasOwnProperty(category)) {
+    // Create a new list
+    let newListName = req.body.newList;
+    let newList = {
+      name: newListName,
+      values: []
+    };
+    console.log(newList);
+        //Add list to dictionary
+    lists[category].push(newList);
+    console.log(lists);
+  } else {
+    // Handle invalid category. You might send an error response 
+    res.status(400).send("Invalid category"); 
+  } 
+})
