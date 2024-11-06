@@ -3,7 +3,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import ejs from "ejs";
 import cookieParser from "cookie-parser";
-import * as listHandler from './myModules/lists.js';
+import * as listHandler from './myModules/listHandler.js';
 
 // Declarations
 const app = express();
