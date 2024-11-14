@@ -4,12 +4,18 @@
 
 <p><%= content %></p>
 
+<div class="new_entry">
+    <a href="/compose">NEW ENTRY</a>
+</div>
+
 <% posts.forEach(function(post){ %>
-    <a href="/posts/<%= posts.indexOf(post) %>">
-        <h5><%= post.title %></h5>
-        <p><%= post.content %></p>
-        <%= console.log(posts.indexOf('post'));%>
-    </a>
+    <div class="entry">
+        <a href="/posts/<%= posts.indexOf(post) %>" class="entry_link">
+            <h5><%= post.title %></h5>
+            <p><%= post.content %></p>
+        </a>
+    </div>
+
 <% }); %>
 
 <%- include("partials/footer.ejs") %>
