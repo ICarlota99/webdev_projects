@@ -1,14 +1,14 @@
 <%- include("partials/header.ejs") %>
 <h1><%= header %></h1>
 
-<form action="/newEntry" method="POST">
+<form action="/newPost" method="POST">
     <div class="mb-3">
         <label class="form-label">Title</label>
-        <input type="text" class="form-control" placeholder="Title">
+        <input type="text" class="form-control" placeholder="Title" name="entryTitle">
     </div>
     <div class="mb-3">
         <label class="form-label">Post</label>
-        <textarea class="form-control" rows="10" placeholder="Write something here"></textarea>
+        <textarea class="form-control" rows="10" placeholder="Write something here" name="entryContent"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">PUBLISH</button>
 </form>
