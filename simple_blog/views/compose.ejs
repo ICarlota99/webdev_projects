@@ -2,8 +2,15 @@
 <h1><%= header %></h1>
 
 <form action="/newEntry" method="POST">
-    <input type="text" name="new_entry" placeholder="Write something here" autocomplete="off">
-    <button type="submit">PUBLISH</button>
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <input type="text" class="form-control" placeholder="Title">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Post</label>
+        <textarea class="form-control" rows="10" placeholder="Write something here"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">PUBLISH</button>
 </form>
 
 <%- include("partials/footer.ejs") %>

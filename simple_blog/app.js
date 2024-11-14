@@ -36,8 +36,9 @@ app.get('/compose', (req, res)=>{
     res.render("compose.ejs", {header: composeHeader});
 });
 app.post('/newEntry', (req, res)=>{
-    
-})
+    let newEntry = req.body.newEntry;
+    console.log(newEntry);
+});
 
 
 app.listen(port, ()=>{

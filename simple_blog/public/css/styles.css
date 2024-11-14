@@ -38,3 +38,8 @@
     font-size: 12px;
     color: #fff;
 }
+
+form label{
+    font-weight: bolder;
+    display: block;
+}
