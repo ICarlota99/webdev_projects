@@ -15,16 +15,21 @@
 <body>
     <!-- Navbar Section -->
      <section>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <div class="navbar-header">
                     <p class="navbar-brand">DAILY JOURNAL</p>
                 </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li id="home"><a href="/"></a>HOME</li>
-                    <li id="home"><a href="/about"></a>ABOUT US</li>
-                    <li id="home"><a href="/contact"></a>CONTACT US</li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li id="home" class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+                        <li id="about" class="nav-item"><a class="nav-link" href="/">ABOUT US</a></li>
+                        <li id="contact" class="nav-item"><a class="nav-link" href="/">CONTACT US</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
      </section>
