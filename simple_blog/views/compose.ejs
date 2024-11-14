@@ -1,0 +1,9 @@
+<%- include("partials/header.ejs") %>
+<h1><%= header %></h1>
+
+<form action="/newEntry" method="POST">
+    <input type="text" name="new_entry" placeholder="Write something here" autocomplete="off">
+    <button type="submit">PUBLISH</button>
+</form>
+
+<%- include("partials/footer.ejs") %>
