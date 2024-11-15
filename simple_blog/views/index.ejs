@@ -13,10 +13,12 @@
         <a href="/posts/<%= posts.indexOf(post) %>" class="entry_link">
             <h5><%= post.title %></h5>
             <p class="date"><%= post.date %></p>
-            <p><%= post.content %></p>
+            <p><%= post.content.slice(0, 350) %></p>
         </a>
+        <button class="entry_btn">✏️</button>
+        <button class="entry_btn">🗑️</button>
     </div>
-
+    <hr>
 <% }); %>
 
 <%- include("partials/footer.ejs") %>

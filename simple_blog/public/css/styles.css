@@ -1,3 +1,8 @@
+hr{
+    border-top: 0.5rem dotted #1abc9c;
+    margin: 1rem auto;
+    width: 20%;
+}
 .navbar{
     padding-top: 15px;
     padding-bottom: 15px;
@@ -59,6 +64,18 @@ a h5{
 }
 .date{
     float: right;
+    margin: 0;
+}
+
+.entry_btn{
+    background-color: none;
+    border: 2px solid #1abc9c;
+    display: inline-flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+h5.date{
+    margin-top: 10px;
 }
 .new_entry{
     background-color: #b7fcee;
