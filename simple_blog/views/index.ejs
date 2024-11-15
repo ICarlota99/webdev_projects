@@ -17,8 +17,8 @@
         <div id="AlertPlaceholder"></div>
 
         <h3><%= post.title %></h3>
-        <p class="date"><%= post.date %></p>
-        <p><%= post.content.slice(0, 150) %>...</p>
+        <p class="date"><%= post.date %></p> <br>
+        <p><%= post.content.slice(0, 500) %>...</p>
         <a href="/posts/<%= posts.indexOf(post) %>" class="entry_link">Read More</a>
         <br>
 

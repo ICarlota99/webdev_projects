@@ -21,12 +21,12 @@ hr{
 }
 
 .footer-padding{
-    padding-bottom: 60px;
+    padding-top: 30px;
 }
 
 .footer{
-    position: absolute;
     text-align: center;
+    position:fixed;
     bottom: 0;
     height: 60px;
     width: 100%;
