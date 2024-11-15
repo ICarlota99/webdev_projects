@@ -4,19 +4,25 @@
 
 <p><%= content %></p>
 
+<!-- Create new entry -->
 <div class="new_entry">
-    <a href="/compose">NEW ENTRY</a>
+    <a href="/compose" class="new_entry_btn">NEW ENTRY</a>
 </div>
 
+<!-- Posts -->
 <% posts.forEach(function(post){ %>
     <div class="entry">
-        <a href="/posts/<%= posts.indexOf(post) %>" class="entry_link">
-            <h5><%= post.title %></h5>
-            <p class="date"><%= post.date %></p>
-            <p><%= post.content.slice(0, 350) %></p>
-        </a>
-        <button class="entry_btn">✏️</button>
-        <button class="entry_btn">🗑️</button>
+
+        <div id="AlertPlaceholder"></div>
+
+        <h3><%= post.title %></h3>
+        <p class="date"><%= post.date %></p>
+        <p><%= post.content.slice(0, 150) %>...</p>
+        <a href="/posts/<%= posts.indexOf(post) %>" class="entry_link">Read More</a>
+        <br>
+
+        <button type="button" id="editAlertBtn<%= posts.indexOf(post) %>" class="entry_btn">✏️</button>
+        <button type="button" id="deleteAlertBtn<%= posts.indexOf(post) %>" class="entry_btn">🗑️</button>
     </div>
     <hr>
 <% }); %>

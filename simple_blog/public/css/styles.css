@@ -55,11 +55,11 @@ form label{
     background-color: #b7fcee;
 }
 
-a{
+.new_entry_btn{
     color: black;
     text-decoration: none;
 }
-a h5{
+h3, p{
     display: inline-block;
 }
 .date{
@@ -70,8 +70,6 @@ a h5{
 .entry_btn{
     background-color: none;
     border: 2px solid #1abc9c;
-    display: inline-flex;
-    justify-content: flex-end;
     margin: 10px;
 }
 h5.date{
