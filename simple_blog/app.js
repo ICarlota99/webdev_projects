@@ -44,13 +44,15 @@ app.get('/compose', (req, res)=>{
 });
 app.get('/posts/:post', (req, res)=>{
     res.render("posts.ejs", {
+        date: posts[req.params.post].date,
         header: posts[req.params.post].title,
         content: posts[req.params.post].content,
     });
 });
 app.post('/newPost', (req, res)=>{
-    
+    let date = new Date(req.body.entryDate).toLocaleString();
     const post = {
+        date: date,
         title: req.body.entryTitle,
         content: req.body.entryContent
     };

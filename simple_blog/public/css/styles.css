@@ -9,7 +9,7 @@
 }
 
 .nav-item{
-    padding-left: 5px;
+    padding-left: 15px;
 }
 .navbar-nav li a:hover{
     color: #1abc9c !important;
@@ -54,12 +54,21 @@ a{
     color: black;
     text-decoration: none;
 }
-
+a h5{
+    display: inline-block;
+}
+.date{
+    float: right;
+}
 .new_entry{
     background-color: #b7fcee;
     display: inline-block;
     padding: 10px;
-    border-radius: 15%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid #1abc9c;
+    font-weight: bold;
 }
 .new_entry:hover{
     background-color: #1abc9c;
