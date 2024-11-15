@@ -60,7 +60,11 @@ app.post('/newPost', (req, res)=>{
 
     res.redirect('/');
 });
-
+app.post('/delete', (req,res)=>{
+    const postId = req.body.postId;
+    posts.splice(postId, 1);
+    res.redirect('/');
+});
 
 app.listen(port, ()=>{
     console.log(`App listening on port ${port}.`);
