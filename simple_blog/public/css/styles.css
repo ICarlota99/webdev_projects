@@ -1,8 +1,3 @@
-.container-fluid{
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
 .navbar{
     padding-top: 15px;
     padding-bottom: 15px;
@@ -44,9 +39,15 @@ form label{
     display: block;
 }
 
-.entry:hover{
-    border: 1px solid black;
+.entry{
+    margin-top: 10px;
     padding: 10px;
+}
+.entry:hover{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #b7fcee;
 }
 
 a{
@@ -55,15 +56,11 @@ a{
 }
 
 .new_entry{
-    background-color: rgb(141, 137, 137);
+    background-color: #b7fcee;
     display: inline-block;
     padding: 10px;
     border-radius: 15%;
 }
 .new_entry:hover{
-    background-color: rgb(100, 97, 97);
-}
-
-.new_entry a{
-    color: white;
+    background-color: #1abc9c;
 }
